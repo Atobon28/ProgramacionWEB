@@ -31,7 +31,7 @@ function App() {
           value={task}
           onChange={handleChange}
         />
-        <button type="listin">Add</button>
+        <button type="listin">Listo</button>
       </form>
 
       <div className="lista de tareas">
