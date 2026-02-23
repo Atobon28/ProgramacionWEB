@@ -1,0 +1,32 @@
+body {
+  background: gray;
+}
+
+.contenedor {
+  width: 320px;
+  margin: 50px 600px; 
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+button {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.bloque {
+  margin-bottom: 15px;
+}
+
+.totales {
+  margin-top: 10px;
+  border-top: 1px solid grey;
+  padding-top: 5px;
+}
