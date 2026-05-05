@@ -1,51 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tareas</title>
-</head>
-<body>
-    <h1>Lista de Tareas</h1>
-    
-    <div>
-        <input type="text" id="tareaInput" placeholder="Escribe una tarea...">
-        <button onclick="agregarTarea()">Agregar Tarea</button>
-    </div>
-    
-    <ul id="listaTareas"></ul>
-    
-    <script>
-        function agregarTarea() {
-            const input = document.getElementById('tareaInput');
-            const texto = input.value.trim();
-            
-            if (texto === '') {
-                return;
-            }
-            
-            const lista = document.getElementById('listaTareas');
-            const nuevaTarea = document.createElement('li');
-            
-            nuevaTarea.innerHTML = `
-                ${texto}
-                <button onclick="eliminarTarea(this)">Eliminar</button>
-            `;
-            
-            lista.appendChild(nuevaTarea);
-            input.value = '';
-        }
-        
-        function eliminarTarea(boton) {
-            const tarea = boton.parentElement;
-            tarea.remove();
-        }
-        
-        document.getElementById('tareaInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                agregarTarea();
-            }
-        });
-    </script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase Auth</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
